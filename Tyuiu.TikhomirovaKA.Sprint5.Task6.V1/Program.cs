@@ -1,2 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Tyuiu.TikhomirovaKA.Sprint5.Task6.V1.Lib;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        DataService ds = new DataService();
+        Console.WriteLine("**************************************************************************");
+        Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
+        Console.WriteLine("**************************************************************************");
+
+        string path = Path.Combine("InPutDataFileTask6V1.txt");
+        Console.WriteLine(path);
+
+        Console.WriteLine("**************************************************************************");
+        Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
+        Console.WriteLine("**************************************************************************");
+        double res = ds.LoadFromDataFile(path);
+        Console.WriteLine(res);
+        Console.ReadKey();
+    }
+}
