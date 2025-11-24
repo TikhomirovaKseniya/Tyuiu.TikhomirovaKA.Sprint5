@@ -8,8 +8,8 @@ internal class Program
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* Спринт #5                                                              *");
         Console.WriteLine("* Тема: Обработка файлов                                                 *");
-        Console.WriteLine("* Задание #0                                                             *");
-        Console.WriteLine("* Вариант #24                                                            *");
+        Console.WriteLine("* Задание #1                                                             *");
+        Console.WriteLine("* Вариант #16                                                            *");
         Console.WriteLine("* Выполнила: Выполнила Тихомирова К. А. | ИБКСб-25-1                     *");
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
