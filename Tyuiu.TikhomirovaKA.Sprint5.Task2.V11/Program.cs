@@ -15,13 +15,20 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
         Console.WriteLine("**************************************************************************");
 
-        int startValue = -5; int stopValue = 5;
-        Console.WriteLine("[" + startValue + ";" + stopValue + "]");
+        int[,] matrix = new int[,] { { 4, 9, 3 }, { 5, 8, 8 }, { 5, 7, 5 } };
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                Console.Write(matrix[i, j] + ", ");
+            }
+            Console.WriteLine();
+        }
 
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
         Console.WriteLine("**************************************************************************");
-        string res = ds.SaveToFileTextData(startValue, stopValue);
+        string res = ds.SaveToFileTextData(matrix);
         Console.WriteLine("Файл: " + res);
         Console.WriteLine("Файл создан!");
         Console.ReadKey();
