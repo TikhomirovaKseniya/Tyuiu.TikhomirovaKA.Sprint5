@@ -12,7 +12,7 @@ namespace Tyuiu.TikhomirovaKA.Sprint5.Task1.V16.Lib
             stopValue = 5;
             for (double x = startValue; x <= stopValue; x++)
             {
-                double fx = Math.Round((Math.Sin(x) + (2 * x) / 3 - Math.Cos(x) * 4 * x), 3);
+                double fx = Math.Round((Math.Sin(x) + (2 * x) / 3 - Math.Cos(x) * 4 * x), 2);
                 if (double.IsInfinity(fx) || double.IsNaN(fx))
                 {
                     fx = 0;
