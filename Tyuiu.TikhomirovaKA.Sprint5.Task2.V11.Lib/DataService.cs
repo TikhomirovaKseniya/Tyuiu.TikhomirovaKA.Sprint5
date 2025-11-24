@@ -22,7 +22,7 @@ namespace Tyuiu.TikhomirovaKA.Sprint5.Task2.V11.Lib
                 string str = "";
                 for (int j = 0; j < columns; j++)
                 {
-                    if (j != columns - 1) str = str + matrix[i, j] + "; ";
+                    if (j != columns - 1) str = str + matrix[i, j] + ";";
                     else str = str + matrix[i, j];                    
                 }
                 if (i != rows - 1) File.AppendAllText(path, str + Environment.NewLine);
