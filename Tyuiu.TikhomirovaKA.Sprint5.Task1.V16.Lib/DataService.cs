@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Globalization;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.TikhomirovaKA.Sprint5.Task1.V16.Lib
 {
@@ -17,8 +18,9 @@ namespace Tyuiu.TikhomirovaKA.Sprint5.Task1.V16.Lib
                 {
                     fx = 0;
                 }
-                if (x != stopValue) File.AppendAllText(path, Convert.ToString(fx) + Environment.NewLine);
-                else File.AppendAllText(path, Convert.ToString(fx));
+                string formattedValue = fx.ToString("0.00", CultureInfo.GetCultureInfo("ru-RU"));
+                if (x != stopValue) File.AppendAllText(path, formattedValue + Environment.NewLine);
+                else File.AppendAllText(path, formattedValue);
             }
             return path;
         }
