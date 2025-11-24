@@ -6,7 +6,10 @@ namespace Tyuiu.TikhomirovaKA.Sprint5.Task2.V11.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
-            throw new NotImplementedException();
+            string path = Path.GetTempPath() + Path.Combine("OutPutFileTask2.txt");
+            if (File.Exists(path)) File.Delete(path);
+            
+            return path;
         }
     }
 }
