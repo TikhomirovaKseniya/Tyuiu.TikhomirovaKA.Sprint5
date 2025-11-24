@@ -1,7 +1,6 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using tyuiu.cources.programming.interfaces.Sprint5;
 
-namespace Tyuiu.Tikhomirova.Sprint5.Task1.V16.Lib
+namespace Tyuiu.TikhomirovaKA.Sprint5.Task1.V16.Lib
 {
     public class DataService : ISprint5Task1V16
     {
@@ -20,7 +19,7 @@ namespace Tyuiu.Tikhomirova.Sprint5.Task1.V16.Lib
                 }
                 if (x != stopValue) File.AppendAllText(path, Convert.ToString(fx) + Environment.NewLine);
                 else File.AppendAllText(path, Convert.ToString(fx));
-            }            
+            }
             return path;
         }
     }

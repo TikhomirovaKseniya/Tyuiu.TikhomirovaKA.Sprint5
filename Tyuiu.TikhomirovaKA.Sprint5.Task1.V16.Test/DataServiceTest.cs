@@ -1,7 +1,7 @@
-﻿namespace Tyuiu.Tikhomirova.Sprint5.Task1.V16.Test
+﻿namespace Tyuiu.TikhomirovaKA.Sprint5.Task1.V16.Test
 {
     [TestClass]
-    public sealed class DataServicetest
+    public sealed class Test1
     {
         [TestMethod]
         public void CheckedExistFile()
